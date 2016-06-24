@@ -96,16 +96,10 @@
 			">
 
 
-        <a class="item" style="
-				border-left: 1px solid #ddd;
-				border-radius: 0;
-				"> <i class="gamepad icon"></i> Games </a>
-        <a class="item"> <i class="video camera icon"></i> Channels </a>
-        <a class="item"> <i class="video play icon"></i> Videos </a>
-        <a class="item"> <i class="video camera icon"></i> Channels </a>
-        <a class="item"> <i class="video play icon"></i> Videos </a>
-        <a class="item"> <i class="video camera icon"></i> Channels </a>
-        <a class="item"> <i class="video play icon"></i> Videos </a>
+        <a href="http://localhost:8000/categories/1" class="item" style="border-left: 1px solid #ddd;	border-radius: 0;"> <i class="gamepad icon"></i> Meetups </a>
+        <a href="http://localhost:8000/categories/2" class="item"> <i class="video camera icon"></i>Hackathons</a>
+        <a href="http://localhost:8000/categories/3" class="item"> <i class="video play icon"></i>Seminars</a>
+
     </div>
 
     <div id="mainContent">

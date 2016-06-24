@@ -56,14 +56,19 @@
         <div class="col-md-8">
             <div id="primary_event_details">
                 <div class="event_image">
-                    <img  class="img-responsive" src="/images/{{$event->main_image}}"/>
+                    <img  title="{{$event->title}}" class="img-responsive" src="/images/{{$event->main_image}}"/>
 
                 </div>
 
                 <div class="event_item" >
                     <h3>Overview</h3>
                     <div id="event_summary">
-                        {{$event->description}}
+                        <?php
+                            if($event->description != null)
+                                echo nl2br($event->description);
+                            else
+                                echo "-";
+                        ?>
                     </div>
                 </div>
 
@@ -77,12 +82,11 @@
                     </div>
                 </div>
 
-                <div class="event_item" >
-                    <h3>Map</h3>
-                    <div id="event_map">
-                        Map here
-                    </div>
-                </div>
+                {{--<div class="event_item" >--}}
+                    {{--<h3>Map</h3>--}}
+                    {{--<div id="event_map">--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </div>
 
@@ -90,60 +94,60 @@
             <div class="whenWhere" >
                 <h3>When and Where</h3>
                 <div id="event_dt_time">
-                    <b>Date</b>
+                    <b><i class="fa fa-calendar-o" aria-hidden="true"></i> Date</b>
                     <p>
                         {{$event->date}}
                     </p>
-                    <b>Time</b>
+                    <b><i class="fa fa-clock-o" aria-hidden="true"></i> Time</b>
                     <p>
                         {{$formatted_time}}
                     </p>
-                    <b>Venue</b>
+                    <b><i class="fa fa-map-marker" aria-hidden="true"></i> Venue</b>
                     <p>
                         {{$event->location}}
                     </p>
-                    <span class="link"><a id="link_to_event" href="{{$event->meetup}}">Meetup Link ></a></span>
+                    <span class="link"><a  title="Meetup Link" target="_blank" id="link_to_event" href="{{$event->meetup}}">Meetup Link ></a></span>
                     <br/>
-                    <span class="link"><a id="link_to_event" href="{{$event->fb}}">Facebook Link ></a></span>
+                    <span class="link"><a title="Facebook Link" style="background: #5c60dc;" target="_blank" id="link_to_event" href="{{$event->fb}}">Facebook Link ></a></span>
                 </div>
             </div>
 
-            <div id="upcoming_events">
-                <h3>UPCOMING EVENTS</h3>
+            {{--<div id="upcoming_events">--}}
+                {{--<h3>UPCOMING EVENTS</h3>--}}
 
-                <div style="position:relative;height:190px;overflow:hidden;margin-bottom: 10px;">
-                    <img style="position: absolute; width: 100%; display: block;" class="img-responsive" src="https://e27.co/img/events/1065/BANSEA%20Breakfast-360x180.png" data-lazy-loaded="true">
-                    <a href="https://e27.co/event/bansea-breakfast-8" title="BANSEA Breakfast" class="pod-event-wrap">
-                        <div class="pod-showcase-img">
-                            <div class="event-date-time">
-                                <span class="block">Jul</span>
-                                <span class="txt-25">05</span>
-                            </div>
-                            <div class="pod-event-title">
-                                <h2>BANSEA Breakfast</h2>
-                                <small>Singapore</small>
-                                <small class="pull-right">1-Day event</small>
-                            </div>
-                        </div> </a>
-                </div>
+                {{--<div style="position:relative;height:190px;overflow:hidden;margin-bottom: 10px;">--}}
+                    {{--<img style="position: absolute; width: 100%; display: block;" class="img-responsive" src="https://e27.co/img/events/1065/BANSEA%20Breakfast-360x180.png" data-lazy-loaded="true">--}}
+                    {{--<a href="https://e27.co/event/bansea-breakfast-8" title="BANSEA Breakfast" class="pod-event-wrap">--}}
+                        {{--<div class="pod-showcase-img">--}}
+                            {{--<div class="event-date-time">--}}
+                                {{--<span class="block">Jul</span>--}}
+                                {{--<span class="txt-25">05</span>--}}
+                            {{--</div>--}}
+                            {{--<div class="pod-event-title">--}}
+                                {{--<h2>BANSEA Breakfast</h2>--}}
+                                {{--<small>Singapore</small>--}}
+                                {{--<small class="pull-right">1-Day event</small>--}}
+                            {{--</div>--}}
+                        {{--</div> </a>--}}
+                {{--</div>--}}
 
-                <div style="position:relative;height:190px;overflow:hidden;margin-bottom: 10px;">
-                    <img style="position: absolute; width: 100%; display: block;" class="img-responsive" src="https://e27.co/img/events/1065/BANSEA%20Breakfast-360x180.png" data-lazy-loaded="true">
-                    <a href="https://e27.co/event/bansea-breakfast-8" title="BANSEA Breakfast" class="pod-event-wrap">
-                        <div class="pod-showcase-img">
-                            <div class="event-date-time">
-                                <span class="block">Jul</span>
-                                <span class="txt-25">05</span>
-                            </div>
-                            <div class="pod-event-title">
-                                <h2>BANSEA Breakfast</h2>
-                                <small>Singapore</small>
-                                <small class="pull-right">1-Day event</small>
-                            </div>
-                        </div> </a>
-                </div>
+                {{--<div style="position:relative;height:190px;overflow:hidden;margin-bottom: 10px;">--}}
+                    {{--<img style="position: absolute; width: 100%; display: block;" class="img-responsive" src="https://e27.co/img/events/1065/BANSEA%20Breakfast-360x180.png" data-lazy-loaded="true">--}}
+                    {{--<a href="https://e27.co/event/bansea-breakfast-8" title="BANSEA Breakfast" class="pod-event-wrap">--}}
+                        {{--<div class="pod-showcase-img">--}}
+                            {{--<div class="event-date-time">--}}
+                                {{--<span class="block">Jul</span>--}}
+                                {{--<span class="txt-25">05</span>--}}
+                            {{--</div>--}}
+                            {{--<div class="pod-event-title">--}}
+                                {{--<h2>BANSEA Breakfast</h2>--}}
+                                {{--<small>Singapore</small>--}}
+                                {{--<small class="pull-right">1-Day event</small>--}}
+                            {{--</div>--}}
+                        {{--</div> </a>--}}
+                {{--</div>--}}
 
-            </div>
+            {{--</div>--}}
         </div>
 
         @if(!Auth::guest())

@@ -28,34 +28,71 @@
 
     <div class="col-md-12">
         <p class="secondary_title">
-            <span></span> Tech Events here...
+            UPCOMING EVENTS
         </p>
     </div>
 
 
-    @foreach($events as $event)
+
         <div class="row">
+            @foreach($events as $event)
             <div class="col-md-4 col-sm-6 col-xs-12 mbt-m ">
-                <div style="position:relative; height:190px; overflow:hidden">
+                <div style="position:relative; height:250px; overflow:hidden">
                     <img style="position: absolute; width: 100%; display: block;" class="img-responsive" src="/images/{{$event->main_image}}" data-lazy-loaded="true">
-                    <a href="/events/{{$event->id}}" title="BANSEA Breakfast" class="pod-event-wrap">
+                    <a href="/events/{{$event->id}}" title="{{$event->title}}" class="pod-event-wrap">
                         <div class="pod-showcase-img">
                             <div class="event-date-time">
-                                <span class="block">Jul</span>
-                                <span class="txt-25">05</span>
+                                <span class="block">
+                                      <?php
+                                    $created =  new \Carbon\Carbon($event->date);
+                                    $monthNum  = $created->month;
+                                    $dateObj   = DateTime::createFromFormat('!m', $monthNum);
+                                    $monthName = $dateObj->format('F');
+                                    echo substr($monthName, 0,3);
+                                    ?>
+                                </span>
+                                <span class="txt-25">
+                                    <?php
+                                    $created =  new \Carbon\Carbon($event->date);
+                                    echo $created->month;
+                                    ?></span>
                             </div>
                             <div class="pod-event-title">
-                                <h2>{{$event->title}}</h2>
-                                <small>{{$event->location}}</small>
-                                <small class="pull-right">1-Day event</small>
+                                <h2>
+                               <?php  echo substr($event->title,0, 35) . "..." ; ?>
+                                </h2>
+                                <small>
+                                    <?php
+                                    if(strlen($event->location) > 15){
+                                        echo substr($event->location,0, 15) . "..." ;
+                                    }else {
+                                        echo $event->location;
+                                    }
+                                    ?>
+
+                                </small>
+
+                                <small class="pull-right">
+                                    <?php
+                                        $created =  new \Carbon\Carbon($event->date);
+                                        $now = \Carbon\Carbon::now();
+
+                                        $difference = ($created->diff($now)->days < 1)
+                                                ? 'today'
+                                                : $created->diffForHumans($now);
+
+                                           echo $difference;
+                                    ?>
+                                </small>
                             </div>
                         </div> </a>
                 </div>
             </div>
+            @endforeach
         </div>
 
         <!-- tile -->
-    @endforeach
+
 
     <div class="row" style="margin: 0;text-align: center;">
         {{--<div class="ui pagination menu ">--}}
