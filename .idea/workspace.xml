@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aff44ee-26ec-4b4b-8028-6325fbb653bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Event.php" afterPath="$PROJECT_DIR$/app/Event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/details.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/details.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" />
     </list>
     <ignored path="techbhet-master.iws" />
@@ -34,13 +27,18 @@
       <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="127" column="6" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
+            <state relative-caret-position="419">
+              <caret line="152" column="34" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
               <folding>
                 <element signature="e#5429#5457#0#HTML" expanded="true" />
                 <element signature="e#5639#5679#0#HTML" expanded="true" />
                 <element signature="e#5742#5771#0#HTML" expanded="true" />
-                <marker date="1466863779797" expanded="true" signature="6796:6924" placeholder="..." />
+                <element signature="e#6620#6659#0#HTML" expanded="true" />
+                <element signature="e#6681#6776#0#HTML" expanded="true" />
+                <element signature="e#6845#7094#0#HTML" expanded="true" />
+                <element signature="e#7234#7332#0#HTML" expanded="true" />
+                <element signature="e#7337#7756#0#HTML" expanded="true" />
+                <marker date="1466865802088" expanded="true" signature="8165:8293" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -132,8 +130,8 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/details.blade.php" />
         <option value="$PROJECT_DIR$/app/Event.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/show.blade.php" />
       </list>
     </option>
   </component>
@@ -508,7 +506,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42664000" />
+    <option name="totallyTimeSpent" value="44107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -638,7 +636,12 @@
             <element signature="e#5429#5457#0#HTML" expanded="true" />
             <element signature="e#5639#5679#0#HTML" expanded="true" />
             <element signature="e#5742#5771#0#HTML" expanded="true" />
-            <marker date="1466863779797" expanded="true" signature="6796:6924" placeholder="..." />
+            <element signature="e#6620#6659#0#HTML" expanded="true" />
+            <element signature="e#6681#6776#0#HTML" expanded="true" />
+            <element signature="e#6845#7094#0#HTML" expanded="true" />
+            <element signature="e#7234#7332#0#HTML" expanded="true" />
+            <element signature="e#7337#7756#0#HTML" expanded="true" />
+            <marker date="1466865802088" expanded="true" signature="8165:8293" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -659,7 +662,12 @@
             <element signature="e#5429#5457#0#HTML" expanded="true" />
             <element signature="e#5639#5679#0#HTML" expanded="true" />
             <element signature="e#5742#5771#0#HTML" expanded="true" />
-            <marker date="1466863779797" expanded="true" signature="6796:6924" placeholder="..." />
+            <element signature="e#6620#6659#0#HTML" expanded="true" />
+            <element signature="e#6681#6776#0#HTML" expanded="true" />
+            <element signature="e#6845#7094#0#HTML" expanded="true" />
+            <element signature="e#7234#7332#0#HTML" expanded="true" />
+            <element signature="e#7337#7756#0#HTML" expanded="true" />
+            <marker date="1466865802088" expanded="true" signature="8165:8293" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -750,7 +758,12 @@
             <element signature="e#5429#5457#0#HTML" expanded="true" />
             <element signature="e#5639#5679#0#HTML" expanded="true" />
             <element signature="e#5742#5771#0#HTML" expanded="true" />
-            <marker date="1466863779797" expanded="true" signature="6796:6924" placeholder="..." />
+            <element signature="e#6620#6659#0#HTML" expanded="true" />
+            <element signature="e#6681#6776#0#HTML" expanded="true" />
+            <element signature="e#6845#7094#0#HTML" expanded="true" />
+            <element signature="e#7234#7332#0#HTML" expanded="true" />
+            <element signature="e#7337#7756#0#HTML" expanded="true" />
+            <marker date="1466865802088" expanded="true" signature="8165:8293" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -801,7 +814,12 @@
             <element signature="e#5429#5457#0#HTML" expanded="true" />
             <element signature="e#5639#5679#0#HTML" expanded="true" />
             <element signature="e#5742#5771#0#HTML" expanded="true" />
-            <marker date="1466863779797" expanded="true" signature="6796:6924" placeholder="..." />
+            <element signature="e#6620#6659#0#HTML" expanded="true" />
+            <element signature="e#6681#6776#0#HTML" expanded="true" />
+            <element signature="e#6845#7094#0#HTML" expanded="true" />
+            <element signature="e#7234#7332#0#HTML" expanded="true" />
+            <element signature="e#7337#7756#0#HTML" expanded="true" />
+            <marker date="1466865802088" expanded="true" signature="8165:8293" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -822,7 +840,12 @@
             <element signature="e#5429#5457#0#HTML" expanded="true" />
             <element signature="e#5639#5679#0#HTML" expanded="true" />
             <element signature="e#5742#5771#0#HTML" expanded="true" />
-            <marker date="1466863779797" expanded="true" signature="6796:6924" placeholder="..." />
+            <element signature="e#6620#6659#0#HTML" expanded="true" />
+            <element signature="e#6681#6776#0#HTML" expanded="true" />
+            <element signature="e#6845#7094#0#HTML" expanded="true" />
+            <element signature="e#7234#7332#0#HTML" expanded="true" />
+            <element signature="e#7337#7756#0#HTML" expanded="true" />
+            <marker date="1466865802088" expanded="true" signature="8165:8293" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1017,13 +1040,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="127" column="6" selection-start-line="127" selection-start-column="6" selection-end-line="127" selection-end-column="6" />
+        <state relative-caret-position="419">
+          <caret line="152" column="34" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
           <folding>
             <element signature="e#5429#5457#0#HTML" expanded="true" />
             <element signature="e#5639#5679#0#HTML" expanded="true" />
             <element signature="e#5742#5771#0#HTML" expanded="true" />
-            <marker date="1466863779797" expanded="true" signature="6796:6924" placeholder="..." />
+            <element signature="e#6620#6659#0#HTML" expanded="true" />
+            <element signature="e#6681#6776#0#HTML" expanded="true" />
+            <element signature="e#6845#7094#0#HTML" expanded="true" />
+            <element signature="e#7234#7332#0#HTML" expanded="true" />
+            <element signature="e#7337#7756#0#HTML" expanded="true" />
+            <marker date="1466865802088" expanded="true" signature="8165:8293" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -124,7 +124,37 @@
                 <script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialshare.js"></script><script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialsharedefaulttheme.js"></script><link rel="stylesheet" type="text/css" href="//sharecdn.social9.com/v2/css/os-share-widget-style.css"/><script type="text/javascript">var shareWidget = new OpenSocialShare();shareWidget.init({isCounterWidgetTheme: 1,isHorizontalCounter: 0,isHorizontalLayout: 1,theme: 'OpenSocialShareDefaultTheme',widgets: { top: ["Facebook Like","Google+ Share","LinkedIn Share","Reddit","Twitter Tweet"]}});shareWidget.injectInterface(".oss-widget-interface");shareWidget.setWidgetTheme(".oss-widget-interface");</script>
 
             </div>
-            
+
+            <div style="padding: 20px;background: #fff;">
+                <h3 style="font-size: 23px;text-transform: uppercase;text-align: center;color: #4f5a62 !important;">Don't see your event?</h3>
+                <div>
+                <p style="
+                        color: #4f5a62 !important;
+                        font-size: 14px;
+                        line-height: 1.7;
+                        text-align: center;
+                        font-weight: 300;
+                    ">
+                    Let others know about your event. List you event for free on TechBhet</p>
+                </div>
+                <div style="margin-top: 10px;
+                            text-align: center;
+                        "><a  style="
+                        background: #9fda50;
+                        padding: 10px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        font-weight: bold;
+                            word-spacing: 2px;
+                        margin: 0 auto;
+                        display: inline-block;
+                    "href="https://www.facebook.com/messages/techlekh?msg_prefill=message&__mref=message_bubble" title="Let us know"
+                    target="_blank"
+                    >Let us know</a>
+                </div>
+            </div>
+
         </div>
 
         @if(!Auth::guest())
