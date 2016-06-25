@@ -119,7 +119,6 @@ class EventsController extends Controller
         $event = Event::find($id);
         $formatted_time = new DateTime($event['time']);
 
-
 //        $formatted_time = date("h:m A" ,strtotime($event['time']));
         $data = array(
             'event'  => $event,

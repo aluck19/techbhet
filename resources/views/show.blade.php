@@ -64,7 +64,7 @@
                     <h3>Overview</h3>
                     <div id="event_summary">
                         <?php
-                            if($event->description != null)
+                        use App\Event;if($event->description != null)
                                 echo nl2br($event->description);
                             else
                                 echo "-";
@@ -108,10 +108,10 @@
                     </p>
                     <?php
                     if($event->meeetup != null){
-                        echo '<span class="link"><a  title="Meetup Link" target="_blank" id="link_to_event" href="{{$event->meetup}}">Meetup Link ></a></span><br/>';
+                        echo '<span class="link"><a  title="Meetup Link" target="_blank" id="link_to_event" href="{{$event->meetup}}">Meetup >>></a></span><br/>';
                     }
                     ?>
-                    <span class="link"><a title="Facebook Link" style="background: #5c60dc;" target="_blank" id="link_to_event" href="{{$event->fb}}">Facebook Link ></a></span>
+                    <span class="link"><a title="Facebook Link" style="background: #5c60dc;" target="_blank" id="link_to_event" href="{{$event->fb}}">Facebook  >>></a></span>
                 </div>
             </div>
 
@@ -124,43 +124,7 @@
                 <script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialshare.js"></script><script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialsharedefaulttheme.js"></script><link rel="stylesheet" type="text/css" href="//sharecdn.social9.com/v2/css/os-share-widget-style.css"/><script type="text/javascript">var shareWidget = new OpenSocialShare();shareWidget.init({isCounterWidgetTheme: 1,isHorizontalCounter: 0,isHorizontalLayout: 1,theme: 'OpenSocialShareDefaultTheme',widgets: { top: ["Facebook Like","Google+ Share","LinkedIn Share","Reddit","Twitter Tweet"]}});shareWidget.injectInterface(".oss-widget-interface");shareWidget.setWidgetTheme(".oss-widget-interface");</script>
 
             </div>
-
-            {{--<div id="upcoming_events">--}}
-                {{--<h3>UPCOMING EVENTS</h3>--}}
-
-                {{--<div style="position:relative;height:190px;overflow:hidden;margin-bottom: 10px;">--}}
-                    {{--<img style="position: absolute; width: 100%; display: block;" class="img-responsive" src="https://e27.co/img/events/1065/BANSEA%20Breakfast-360x180.png" data-lazy-loaded="true">--}}
-                    {{--<a href="https://e27.co/event/bansea-breakfast-8" title="BANSEA Breakfast" class="pod-event-wrap">--}}
-                        {{--<div class="pod-showcase-img">--}}
-                            {{--<div class="event-date-time">--}}
-                                {{--<span class="block">Jul</span>--}}
-                                {{--<span class="txt-25">05</span>--}}
-                            {{--</div>--}}
-                            {{--<div class="pod-event-title">--}}
-                                {{--<h2>BANSEA Breakfast</h2>--}}
-                                {{--<small>Singapore</small>--}}
-                                {{--<small class="pull-right">1-Day event</small>--}}
-                            {{--</div>--}}
-                        {{--</div> </a>--}}
-                {{--</div>--}}
-
-                {{--<div style="position:relative;height:190px;overflow:hidden;margin-bottom: 10px;">--}}
-                    {{--<img style="position: absolute; width: 100%; display: block;" class="img-responsive" src="https://e27.co/img/events/1065/BANSEA%20Breakfast-360x180.png" data-lazy-loaded="true">--}}
-                    {{--<a href="https://e27.co/event/bansea-breakfast-8" title="BANSEA Breakfast" class="pod-event-wrap">--}}
-                        {{--<div class="pod-showcase-img">--}}
-                            {{--<div class="event-date-time">--}}
-                                {{--<span class="block">Jul</span>--}}
-                                {{--<span class="txt-25">05</span>--}}
-                            {{--</div>--}}
-                            {{--<div class="pod-event-title">--}}
-                                {{--<h2>BANSEA Breakfast</h2>--}}
-                                {{--<small>Singapore</small>--}}
-                                {{--<small class="pull-right">1-Day event</small>--}}
-                            {{--</div>--}}
-                        {{--</div> </a>--}}
-                {{--</div>--}}
-
-            {{--</div>--}}
+            
         </div>
 
         @if(!Auth::guest())

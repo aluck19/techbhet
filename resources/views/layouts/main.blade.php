@@ -49,7 +49,7 @@
                             <a href="http://localhost:8000/">Home</a>
                         </li>
                         {{--<li>--}}
-                            {{--<a href="#">TAB</a>--}}
+                            {{--<a href="http://techlekh.com/">TechLekh</a>--}}
                         {{--</li>--}}
                         {{--<li>--}}
                             {{--<a href="#">TAB</a>--}}
@@ -185,7 +185,7 @@
             <div class="row">
                 <div id="liscene">
                     <p>
-                        Copyright &copy; 2015. All Rights Reserved.
+                        Copyright &copy; 2016. All Rights Reserved.
                     </p>
                 </div>
             </div><!-- row -->

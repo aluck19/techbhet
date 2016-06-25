@@ -69,7 +69,7 @@
             <div class="row">
                 <div id="liscene">
                     <p>
-                        Copyright &copy; 2015. All Rights Reserved.
+                        Copyright &copy; 2016. All Rights Reserved.
                     </p>
                 </div>
             </div><!-- row -->
