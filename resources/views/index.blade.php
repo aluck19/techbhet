@@ -2,6 +2,34 @@
 
 @section('title', 'Home')
 
+@section('cat_labels')
+    <div class="ui fluid labeled icon menu" style="
+			margin: 0;
+			border-radius: 0;
+			border-bottom: 2px solid #61B201;
+			">
+
+
+        <a href="http://localhost:8000/categories/1" class="item" style="border-left: 1px solid #ddd;	border-radius: 0;">
+            <img src="../img/meetup_icon.png" style="width: 25px;height: 25px; margin-bottom: 5px;">
+            Meetups
+        </a>
+        <a href="http://localhost:8000/categories/2" class="item">
+            <img src="../img/hackathon_icon.png" style="width: 25px;height: 25px; margin-bottom: 5px;">
+            Hackathons
+        </a>
+        <a href="http://localhost:8000/categories/3" class="item">
+            <img src="../img/workshop_icon.png" style="width: 25px;height: 25px; margin-bottom: 5px;">
+            Worskhops
+        </a>
+        <a href="http://localhost:8000/categories/4" class="item">
+            <img src="../img/competition_icon.png" style="width: 25px;height: 25px; margin-bottom: 5px;">
+            Competitions
+        </a>
+
+    </div>
+@stop
+
 @section('content')
     {{--<div class="panel panel-default">--}}
         {{--<div class="panel-heading">--}}

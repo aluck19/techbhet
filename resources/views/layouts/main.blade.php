@@ -76,7 +76,7 @@
                     <br/>
                     <br/>
                     <p>
-                        Some of the best startup and tech events happen in Nepal.
+                        Many startup and tech events happen in Nepal.
                     </p>
                     <p>
                         Discover events happening and connect with local entrepreneurs.
@@ -89,19 +89,7 @@
         </div><!--container -->
     </header>
 
-    <div class="ui fluid labeled icon menu" style="
-			margin: 0;
-			border-radius: 0;
-			border-bottom: 2px solid #61B201;
-			">
-
-
-        <a href="http://localhost:8000/categories/1" class="item" style="border-left: 1px solid #ddd;	border-radius: 0;"> <i class="gamepad icon"></i> Meetups </a>
-        <a href="http://localhost:8000/categories/2" class="item"> <i class="video camera icon"></i>Hackathons</a>
-        <a href="http://localhost:8000/categories/3" class="item"> <i class="video play icon"></i>Worskhops</a>
-        <a href="http://localhost:8000/categories/4" class="item"> <i class="video play icon"></i>Competitions</a>
-
-    </div>
+        @yield('cat_labels')
 
     <div id="mainContent">
 
