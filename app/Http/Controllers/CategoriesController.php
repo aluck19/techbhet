@@ -12,6 +12,7 @@ use Log;
 class CategoriesController extends Controller
 {
 
+//$events = Event::orderBy('date', 'asc')->paginate(6);
     public function show($id)
     {
 
@@ -19,9 +20,9 @@ class CategoriesController extends Controller
         $count = Event::where('category_id', $id)->count();
        if (($count)>0){
 
-          $events = Event::with('category')->whereHas('category', function($query) use ($id) {
+          $events = Event::orderBy('date', 'asc')->whereHas('category', function($query) use ($id) {
                $query->where('category_id', '=', $id);
-           })->paginate(1);
+           })->paginate(6);
          //  $events = Event::with('category')->get();
        //  echo dd($events);
             return view('index', compact('events'));

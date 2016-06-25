@@ -37,7 +37,7 @@ class EventsController extends Controller
     {
 
 
-        $events = Event::orderBy('id', 'desc')->paginate(2);
+        $events = Event::orderBy('date', 'asc')->paginate(6);
         return view('index',  compact('events'));
 
         
@@ -234,7 +234,7 @@ class EventsController extends Controller
             $query->where('title', 'LIKE', '%' . $searchString . '%')
                 ->orWhere('description',  'LIKE', '%' . $searchString . '%')
                 ->orWhere('tags',   'LIKE', '%' . $searchString . '%');
-        })->paginate(1);
+        })->paginate(6);
 //        orWhere('title', 'LIKE', '%' . $searchString . '%')
 //            ->orWhere('description',  'LIKE', '%' . $searchString . '%')->orWhere('tags',   'LIKE', '%' . $searchString . '%')->paginate(2);
 
@@ -242,7 +242,7 @@ class EventsController extends Controller
        // dd($events);
     }else{
         $events = DB::table('events')->where('title', 'LIKE', '%' . $searchString . '%')
-            ->orWhere('description',  'LIKE', '%' . $searchString . '%')->orWhere('tags',   'LIKE', '%' . $searchString . '%')->paginate(2);
+            ->orWhere('description',  'LIKE', '%' . $searchString . '%')->orWhere('tags',   'LIKE', '%' . $searchString . '%')->paginate(6);
 
         //dd($events);
     }

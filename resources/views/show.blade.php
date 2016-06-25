@@ -106,8 +106,11 @@
                     <p>
                         {{$event->location}}
                     </p>
-                    <span class="link"><a  title="Meetup Link" target="_blank" id="link_to_event" href="{{$event->meetup}}">Meetup Link ></a></span>
-                    <br/>
+                    <?php
+                    if($event->meeetup != null){
+                        echo '<span class="link"><a  title="Meetup Link" target="_blank" id="link_to_event" href="{{$event->meetup}}">Meetup Link ></a></span><br/>';
+                    }
+                    ?>
                     <span class="link"><a title="Facebook Link" style="background: #5c60dc;" target="_blank" id="link_to_event" href="{{$event->fb}}">Facebook Link ></a></span>
                 </div>
             </div>
@@ -155,7 +158,7 @@
                 <div class="pull-right event-controls">
                     <a href="/events/{{$event->id}}/edit" class="btn btn-default">Edit</a>
                     {!! Form::open(['method' => 'DELETE', 'route' => ['events.destroy', $event->id]]) !!}
-                    {!! Form::submit('Delete', $attributes=['class' => 'btn btn-danger'])!!}
+                    {!! Form::submit('Delete',  $attributes=['class' => 'btn btn-danger'])!!}
                     {!! Form::close() !!}
                 </div>
 

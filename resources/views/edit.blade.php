@@ -58,11 +58,11 @@
                 {!! Form::text('fb', $value=$event->fb, $attributes = ['class'=>'form-control', 'name' => 'fb']) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('organizer','Organizer') !!}
+                {!! Form::label('organizer','Organizer Name') !!}
                 {!! Form::text('organizer', $value=$event->organizer, $attributes = ['class'=>'form-control', 'name' => 'organizer']) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('details_organizer','Details') !!}
+                {!! Form::label('details_organizer','Organizer Details') !!}
                 {!! Form::textarea('details_organizer', $value=$event->details_organizer, $attributes = ['class'=>'form-control', 'name' => 'details_organizer']) !!}
             </div>
             <div class="form-group">

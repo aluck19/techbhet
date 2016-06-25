@@ -32,9 +32,25 @@
         </p>
     </div>
 
-
+    <?php if($events == null){
+        echo '<p  style="
+                                text-align: center;
+                                font-size: 17px;
+                                color: #8cc83b;
+                                font-weight: bold;
+                                display: inline-block;
+                                margin: 0 auto;
+                                width: 100%;
+                                background: white;
+                                padding: 10px;
+                                border: 1px solid;
+                            ">No events found in this category.<p>';
+    }?>
 
         <div class="row">
+
+
+
             @foreach($events as $event)
             <div class="col-md-4 col-sm-6 col-xs-12 mbt-m ">
                 <div style="position:relative; height:250px; overflow:hidden">
@@ -54,7 +70,7 @@
                                 <span class="txt-25">
                                     <?php
                                     $created =  new \Carbon\Carbon($event->date);
-                                    echo $created->month;
+                                    echo $created->day;
                                     ?></span>
                             </div>
                             <div class="pod-event-title">
@@ -74,7 +90,9 @@
 
                                 <small class="pull-right">
                                     <?php
-                                        $created =  new \Carbon\Carbon($event->date);
+
+                                        $timestamp = $event->date;
+                                        $created =  \Carbon\Carbon::createFromFormat('Y-m-d', $timestamp)->timezone('Asia/Kathmandu');
                                         $now = \Carbon\Carbon::now();
 
                                         $difference = ($created->diff($now)->days < 1)

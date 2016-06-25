@@ -76,10 +76,10 @@
                     <br/>
                     <br/>
                     <p>
-                        Some of the best startup and tech events happen in Asia each day.
+                        Some of the best startup and tech events happen in Nepal.
                     </p>
                     <p>
-                        Discover events happening in your city and connect with local entrepreneurs.
+                        Discover events happening and connect with local entrepreneurs.
                     </p>
                 </div>
 
@@ -98,7 +98,8 @@
 
         <a href="http://localhost:8000/categories/1" class="item" style="border-left: 1px solid #ddd;	border-radius: 0;"> <i class="gamepad icon"></i> Meetups </a>
         <a href="http://localhost:8000/categories/2" class="item"> <i class="video camera icon"></i>Hackathons</a>
-        <a href="http://localhost:8000/categories/3" class="item"> <i class="video play icon"></i>Seminars</a>
+        <a href="http://localhost:8000/categories/3" class="item"> <i class="video play icon"></i>Worskhops</a>
+        <a href="http://localhost:8000/categories/4" class="item"> <i class="video play icon"></i>Competitions</a>
 
     </div>
 
@@ -137,7 +138,7 @@
 {{--</nav>--}}
 
 <div class="container">
-    {!! Form::open(array('action'=>'EventsController@search', 'method'=>'GET')) !!}
+    {!! Form::open(array('action'=>'EventsController@search', 'class'=> 'row', 'method'=>'GET')) !!}
 
     <div  id="main_search_outer" class="row">
         <div  id="main_search" class="ui fluid action input">
