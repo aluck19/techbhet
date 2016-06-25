@@ -115,6 +115,16 @@
                 </div>
             </div>
 
+            <div class="whenWhere">
+                <h3 style="background: #9fda50;color: #fff;">Share the event!</h3>
+                <div id="event_dt_time" style="padding-bottom: 15px;">
+                    <div class='oss-widget-interface'></div>
+                </div>
+
+                <script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialshare.js"></script><script type="text/javascript" src="//sharecdn.social9.com/v2/js/opensocialsharedefaulttheme.js"></script><link rel="stylesheet" type="text/css" href="//sharecdn.social9.com/v2/css/os-share-widget-style.css"/><script type="text/javascript">var shareWidget = new OpenSocialShare();shareWidget.init({isCounterWidgetTheme: 1,isHorizontalCounter: 0,isHorizontalLayout: 1,theme: 'OpenSocialShareDefaultTheme',widgets: { top: ["Facebook Like","Google+ Share","LinkedIn Share","Reddit","Twitter Tweet"]}});shareWidget.injectInterface(".oss-widget-interface");shareWidget.setWidgetTheme(".oss-widget-interface");</script>
+
+            </div>
+
             {{--<div id="upcoming_events">--}}
                 {{--<h3>UPCOMING EVENTS</h3>--}}
 
