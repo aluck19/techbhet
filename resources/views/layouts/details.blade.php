@@ -6,7 +6,7 @@
 
     <title>@yield('title') - TechBhet</title>
 
-    <link rel="icon" type="image/png" href="../../img/favicon.PNG" />
+    <link rel="icon" type="image/png" href="../../favicon.ico" />
 
     @include('layouts.styles')
 
