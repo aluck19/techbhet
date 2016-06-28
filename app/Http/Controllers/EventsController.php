@@ -37,7 +37,9 @@ class EventsController extends Controller
     {
 
 
-        $events = Event::orderBy('date', 'asc')->paginate(6);
+        //$events = Event::orderBy('date', 'asc')->paginate(6);
+        $events = Event::orderBy('date', 'asc')->where('date', '>=', date('Y-m-d').' 00:00:00')->paginate(6);
+
         return view('index',  compact('events'));
 
         

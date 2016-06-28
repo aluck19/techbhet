@@ -97,7 +97,7 @@ div#nav_spacing {
 	padding-top: 100px;
 }
 h2#event_title {
-	background: #78B526;
+	background: #83ca25;
 	color: #fff;
 	display: inline-block;
 	padding: 5px 10px;
@@ -218,6 +218,13 @@ div#secondary_search {
 	text-transform: uppercase;
 	top: 0;
 	text-align: center;
+}
+.on-going {
+	position: absolute;
+	right: 0;
+	padding: 8px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0) ! important;
 }
 .block {
 	display: block !important;

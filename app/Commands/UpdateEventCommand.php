@@ -11,6 +11,7 @@ use App\Commands\Command;
 use Illuminate\Contracts\Bus\SelfHandling;
 use App\Event;
 
+
 class UpdateEventCommand extends Command implements SelfHandling{
     public $id;
     public $title;
@@ -44,6 +45,7 @@ class UpdateEventCommand extends Command implements SelfHandling{
     }
 
     public function handle(){
+
         return Event::where('id', $this->id)->update(array(
             'title' => $this->title,
             'category_id' => $this->category_id,

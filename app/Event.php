@@ -13,10 +13,7 @@ class Event extends Model
 
     protected $hidden = [];
 
-    public static function where($string, $category_id)
-    {
-    }
-
+ 
     public function category()
     {
         return $this->belongsTo('App\Category');

@@ -43,7 +43,7 @@ button.btn.btn-success {
 <script>
     $('#subscribe').on('click', function (e) {
         bootbox.dialog({
-            title: "Subscribe to events",
+            title: "<div>Subscribe to events</div>",
             message: '<p id="subs_message" >You have to sign up for free subscription of events. It takes only few seconds...</p>' +
             '<div id="main_subs" class="ui fluid action input"> <select class="ui search dropdown" id="subs_category"> <option value="TheLacunaBlog">Meetups</option> <option value="hackathons">Hackathons</option> <option value="Workshops">Workshops</option></select> ' +
             '<input  type="email" id="subs_email"   size="30" placeholder="Enter email address"  name="subs_email" required=""/></div>',

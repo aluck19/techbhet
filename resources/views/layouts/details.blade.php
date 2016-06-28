@@ -6,10 +6,18 @@
 
     <title>@yield('title') - TechBhet</title>
 
+    <meta content='noodp,noydir' name='robots'/>
+    <meta content='INDEX, FOLLOW' name='GOOGLEBOT'/>
+    <meta content='TechLekh.com' name='author'/>
+    <meta content="{{$event->category}}, {{$event->title}}, {{$event->location}}" name='keywords'/>
+
     <link rel="icon" type="image/png" href="../../favicon.ico" />
 
     @include('layouts.styles')
 
+    <script src="{{ URL::asset('/js/bootbox.min.js') }}"></script>
+
+    {!!   Feed::link(url('feeds'), 'atom', 'Site Feed', 'en') !!}
 </head>
 
 <body>

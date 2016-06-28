@@ -101,6 +101,41 @@
                                     echo $created->day;
                                     ?></span>
                             </div>
+                            <div class="on-going">
+                                             <?php
+                                             $category = $event->category_id;
+
+                                        $fn = function($category) {
+                                                   switch ($category) {
+                                                         case 1:
+                                                             return "Meetup";
+                                                             break;
+                                                         case 2:
+                                                             return "Hackathon";
+                                                             break;
+                                                         case 3:
+                                                             return "Workshop";
+                                                             break;
+                                                         case 4:
+                                                             return "Competition";
+                                                             break;
+                                                         case 5:
+                                                             return "Talk";
+                                                             break;
+                                                         case 6:
+                                                             return "Other";
+                                                             break;
+                                                         default:
+                                                             return "Uncategoried";
+                                                    }
+                                                };
+                                            $str = $fn($event->category_id);
+                                            echo '<small class="block">' . $str . '</small>';
+
+                                        ?>
+
+
+                            </div>
                             <div class="pod-event-title">
                                 <h2>
                                <?php  echo substr($event->title,0, 35) . "..." ; ?>

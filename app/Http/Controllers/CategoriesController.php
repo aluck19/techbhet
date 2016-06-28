@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Event;
 use App\Category;
+use App;
 use Log;
+
 
 class CategoriesController extends Controller
 {
@@ -17,7 +19,10 @@ class CategoriesController extends Controller
     {
 
         $events = array();
-        $count = Event::where('category_id', $id)->count();
+        $count = \DB::table('events')->where('category_id', $id)->count();
+        //$count = Event::where('category_id', $id);
+
+        //echo $count;
        if (($count)>0){
 
           $events = Event::orderBy('date', 'asc')->whereHas('category', function($query) use ($id) {
