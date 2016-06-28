@@ -26,6 +26,14 @@
             <img src="../img/competition_icon.png" style="width: 25px;height: 25px; margin-bottom: 5px;">
             Competitions
         </a>
+        <a href="http://localhost:8000/categories/5" class="item">
+            <img src="../img/talk_icon.png" style="width: 25px;height: 25px; margin-bottom: 5px;">
+            Talks
+        </a>
+        <a href="http://localhost:8000/categories/6" class="item">
+            <img src="../img/other_icon.png" style="width: 25px;height: 25px; margin-bottom: 5px;">
+            Others
+        </a>
 
     </div>
 @stop
@@ -60,7 +68,7 @@
         </p>
     </div>
 
-    <?php if($events == null){
+    <?php if($events == null || empty($events) || !isset($events)){
         echo '<p  style="
                                 text-align: center;
                                 font-size: 17px;

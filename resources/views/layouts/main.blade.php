@@ -48,6 +48,12 @@
                         <li>
                             <a href="http://localhost:8000/">Home</a>
                         </li>
+                        <li>
+                            <a target="_blank"  href="http://techlekh.com/about/">About</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://techlekh.com/contact/">Contact</a>
+                        </li>
                         {{--<li>--}}
                             {{--<a href="http://techlekh.com/">TechLekh</a>--}}
                         {{--</li>--}}
@@ -70,7 +76,7 @@
         <div class="container">
             <div class="row">
                 <div class="header_info">
-                    <h2>Tech <span style="color:black;"> भेट </span></h2>
+                    <a title="Techभेट" style="text-decoration: none" href="http://localhost:8000/"> <h2>Tech <span style="color:black;"> भेट </span></h2> </a>
 
                     <h3>Attend the hottest tech events in Nepal</h3>
                     <br/>
