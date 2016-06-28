@@ -108,6 +108,7 @@
                         <b>Organizers Name</b>
                         <p>{{$event->organizer}}</p>
                         <b>Organizers Details</b>
+                        <br/>
                 <?php
 
 
@@ -201,7 +202,7 @@
                 <style>
                     div#customizeSubs {
                         background: #83ca25;
-                        margin-bottom: 10px;
+                        margin-bottom: 15px;
                         padding: 10px;
                     }
                     div#customizeSubs input {
