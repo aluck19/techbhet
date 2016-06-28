@@ -8,7 +8,14 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>TechBhet - @yield('title')</title>
+    <title>TechBhet - Upcoming Tech and Startup Events in Nepal</title>
+
+
+    <meta content='noodp,noydir' name='robots'/>
+    <meta content='INDEX, FOLLOW' name='GOOGLEBOT'/>
+    <meta content='TechLekh.com' name='author'/>
+    <meta content="Connect with the tech and startup community at Nepal events, conferences, hackathons and meetups." name="description" />
+    <meta content="nepal tech events, tech events in nepal, events, startup events in nepal, tech events nepal, techlekh, techbhet" name="keywords" />
 
     <!-- Bootstrap core CSS -->
     {{--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">--}}
