@@ -31,11 +31,12 @@ Route::group(['middleware' => 'web'], function () {
         $feeds->setCache(30, 'MainFeedKey');
 
         // check if there is cached feed and build new only if is not
-        if (!$feeds ->isCached())
-        {
+       if (!$feeds ->isCached())
+       {
         // creating rss feed with our most recent 20 records in news table
         $news =  \DB::table('events')->orderBy('created_at', 'desc')->take(20)->get();
         // set your feed's title, description, link, pubdate and language
+
         $feeds ->title = 'TechBhet';
         $feeds ->description = 'Event Listing';
         $feeds ->logo = 'http://techbhet.com/logo.jpg';
@@ -50,7 +51,7 @@ Route::group(['middleware' => 'web'], function () {
         {
             // set item's title, author, url, pubdate, description and content
             $image  = '<img src="'. url('/images/'.$n->main_image) .'" height="250" width="150" /><p>';
-            $feeds ->add($n->title, "TechBhet", url('/events/'.$n->id), $n->created_at, $image.$n->description, $n->description);
+            $feeds ->add($n->title, "TechBhet", url('/events/'.$n->id), $n->created_at, $image, $n->description, $n->description);
 
         }
 

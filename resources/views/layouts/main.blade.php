@@ -14,8 +14,17 @@
     <meta content='noodp,noydir' name='robots'/>
     <meta content='INDEX, FOLLOW' name='GOOGLEBOT'/>
     <meta content='TechLekh.com' name='author'/>
-    <meta content="Connect with the tech and startup community at Nepal events, conferences, hackathons and meetups." name="description" />
+    <meta content="Never miss a technology event in Nepal. Connect with the Tech and Startup community of Nepal. Attend Tech events, conferences, hackathons and meetups." name="description" />
     <meta content="nepal tech events, tech events in nepal, events, startup events in nepal, tech events nepal, techlekh, techbhet" name="keywords" />
+    
+    <meta property="og:title" content="TechBhet.com - Upcoming Tech and Startup Events in Nepal"/>
+<meta property="og:type" content="events"/>
+<meta property="og:url" content="http://events.techlekh.com"/>
+<meta property="og:image" content="http://events.techlekh.com/img/techbhet.PNG"/>
+<meta property="og:site_name" content="TechBhet.com"/>
+<meta property="fb:app_id" content="1775974182626080"/>
+<meta property="og:description" content="Never miss a technology event in Nepal. Connect with the Tech and Startup community of Nepal. Attend Tech events, conferences, hackathons and meetups."/>
+
 
     <!-- Bootstrap core CSS -->
     {{--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">--}}
@@ -48,12 +57,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="http://localhost:8000/"><i style="color: #fff;" class="fa fa-calendar"></i></a>
+                    <a class="navbar-brand" href="http://events.techlekh.com/"><i style="color: #fff;" class="fa fa-calendar"></i></a>
                 </div>
                 <div class="collapse navbar-collapse" id="example-navbar-collapse">
                     <ul class="nav navbar-nav" style="border-bottom: 1px solid #ddd;">
                         <li>
-                            <a href="http://localhost:8000/">Home</a>
+                            <a href="http://events.techlekh.com/">Home</a>
                         </li>
                         <li>
                             <a target="_blank"  href="http://techlekh.com/about/">About</a>
@@ -83,16 +92,22 @@
         <div class="container">
             <div class="row">
                 <div class="header_info">
-                    <a title="Techभेट" style="text-decoration: none" href="http://localhost:8000/"> <h2>Tech <span style="color:black;"> भेट </span></h2> </a>
+                    <a title="Techभेट" style="text-decoration: none" href="http://events.techlekh.com/"> <h2>Tech <span style="color:black;"> भेट </span><span style="
+    font-size: 11px;
+    color: #ffffff;
+    background: #8fce3a;
+    padding: 3px 3px 3px 7px;
+    letter-spacing: 3px;
+">BETA</span></h2> </a>
 
-                    <h3>Attend the hottest tech events in Nepal</h3>
+                    <h3>Attend the hottest Tech Events in Nepal</h3>
                     <br/>
                     <br/>
                     <p>
                         Many startup and tech events happen in Nepal.
                     </p>
                     <p>
-                        Discover events happening and connect with local entrepreneurs.
+                        Discover events and connect with local entrepreneurs and communities.
                     </p>
                 </div>
 
@@ -150,8 +165,8 @@
                     <option class="item" value="{{$category->id}}" name="cat">{{$category->name}}</option>
                 @endforeach
             </select>
-            <button class="ui teal right labeled icon button">
-                <i class="search icon"></i>
+            <button class="ui teal button" style="background: #8CC83B; outline: 0; width: 100px;">             
+
                 Search
             </button>
         </div>

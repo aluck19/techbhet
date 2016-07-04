@@ -27,23 +27,30 @@
     <nav id="secondar_nav">
         <div class="container">
             <div class="row">
-              <a style="color: #000; text-decoration: none" href="http://localhost:8000/"><div class="second_logo col-md-3" >
-                    <h2><span style="color:#7CB736;">Tech</span>भेट </h2>
+              <a style="color: #000; text-decoration: none" href="http://events.techlekh.com/"><div class="second_logo col-md-3" >
+                    <h2><span style="color:#7CB736;">Tech</span>भेट <span style="
+    font-size: 9px;
+    color: #ffffff;
+    background: #8fce3a;
+    padding: 3px 3px 3px 7px;
+    letter-spacing: 3px;
+">BETA</span> </h2>
                 </div>
               </a>
 
                 {!! Form::open(array('action'=>'EventsController@search', 'method'=>'GET')) !!}
                 <div  class="col-md-8" id="secodary_search_outer">
                     <div  id="secondary_search" class="ui  action input">
-                        <input type="text" name="key" placeholder="Put search keywords here..."  required="">
+                        <input type="text" name="key" placeholder="Search keywords here..."  required="">
                         <select name="cat" class="ui search dropdown">
                             <option value="">Category</option>
                             @foreach($categories as $category)
                                 <option class="item" value="{{$category->id}}" name="cat">{{$category->name}}</option>
                             @endforeach
                         </select>
-                        <button class="ui teal right labeled icon button">
-                            <i class="search icon"></i>
+                        <button class="ui teal button" style="background: #8CC83B; outline: 0; width: 100px;">             
+
+                         
                             Search
                         </button>
                     </div>

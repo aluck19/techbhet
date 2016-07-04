@@ -50,7 +50,7 @@
         {{--</div>--}}
     {{--</div>--}}
 
-    <h2 id="event_title">{{$event->title}} </h2>
+    <a href="<?php echo url()->current();?>"><h2 id="event_title">{{$event->title}} </h2></a>
     <div  id="event" class="row">
 
         <div class="col-md-8">
@@ -268,7 +268,13 @@
                         text-align: center;
                         font-weight: 300;
                     ">
-                    Let others know about your event. List you event for free on TechBhet</p>
+                    Let others know about it.</p><p style="
+                        color: #4f5a62 !important;
+                        font-size: 16px;
+                        line-height: 1.2;
+                        text-align: center;
+                        font-weight: 300;
+                    "> List your event for free on TechBhet.</p>
                 </div>
                 <div style="margin-top: 10px;
                             text-align: center;

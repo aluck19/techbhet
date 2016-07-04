@@ -64,7 +64,7 @@ nav.navbar.navbar-default {
 }
 nav#secondar_nav {
 	background: #fff;
-	padding: 20px 0px 10px;
+	padding: 15px 0px 5px;
 	border-bottom: 2px solid #8CC83B;
 	position: fixed;
 	width: 100%;
@@ -81,7 +81,7 @@ nav#secondar_nav {
 }
 /*----------- Content --------------*/
 #mainContent {
-	padding: 10px;
+	padding: 30px;
 	padding-bottom: 80px !important; /* Height of the footer element */
 }
 .ui.fluid.labeled.icon.menu > .item {
@@ -94,7 +94,7 @@ p.secondary_title {
 }
 /*----------- Details Page --------------*/
 div#nav_spacing {
-	padding-top: 100px;
+	padding-top: 78px;
 }
 h2#event_title {
 	background: #83ca25;
@@ -102,9 +102,10 @@ h2#event_title {
 	display: inline-block;
 	padding: 5px 10px;
 	border-left: 5px solid #FFE;
+	margin-bottom: 15px;
 }
 .event_image img {
-	height: 300px;
+	height: 400px;
 	width: 100%;
 }
 #primary_event_details {

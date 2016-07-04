@@ -43,9 +43,9 @@ button.btn.btn-success {
 <script>
     $('#subscribe').on('click', function (e) {
         bootbox.dialog({
-            title: "<div>Subscribe to events</div>",
-            message: '<p id="subs_message" >You have to sign up for free subscription of events. It takes only few seconds...</p>' +
-            '<div id="main_subs" class="ui fluid action input"> <select class="ui search dropdown" id="subs_category"> <option value="TheLacunaBlog">Meetups</option> <option value="hackathons">Hackathons</option> <option value="Workshops">Workshops</option></select> ' +
+            title: "<div>Subscribe to events via Email (Powered by Feedburner)</div>",
+            message: '<p id="subs_message" >You have to sign up for free subscription of events. It only takes a few seconds...</p>' +
+            '<div id="main_subs" class="ui fluid action input"> <select class="ui search dropdown" id="subs_category"><option value="TechBhet">All Events</option> <option value="TechBhetMeetups">Meetups</option> <option value="TechBhetHackathons">Hackathons</option> <option value="Workshops">Workshops</option><option value="TechBhetCompetitions">Competitions</option><option value="TechBhetTalks">Talks</option><option value="TechBhetOthers">Others</option></select> ' +
             '<input  type="email" id="subs_email"   size="30" placeholder="Enter email address"  name="subs_email" required=""/></div>',
             buttons: {
                 success: {
@@ -54,8 +54,6 @@ button.btn.btn-success {
                     callback: function () {
                         var name = $('#subs_category').val();
                         var email = $('#subs_email').val();
-//                                console.log(name);
-//                                console.log(email);
                         window.open("http://feedburner.google.com/fb/a/mailverify?uri=" + name + "&email=" + email);
                         return false;
                     }
